@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+"http://docs.oasis-open.org/dita/dtd/topic.dtd">
+<topic id="backend">
+  <title>Getting Started</title>
+
+  <body>
+    <p>
+      Simple.  Install leiningen, create new skel proj, run repl
+    </p>
+    <section>
+      <title></title>
+      <p>
+    </p>
+    </section>
+
+  </body>
+
+  <related-links>
+    <!-- <link href="embed2.dita"> -->
+    <!--   <linktext/> -->
+    <!-- </link> -->
+  </related-links>
+</topic>

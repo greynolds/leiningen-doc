@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN"
+"http://docs.oasis-open.org/dita/dtd/bookmap.dtd">
+<bookmap chunk="by-document">
+  <title>Leiningen User&#x2019;s Guide</title>
+  <booktitle>
+    <booklibrary>Leiningen Documentation</booklibrary>
+    <mainbooktitle>Leiningen User's Guide</mainbooktitle>
+    <booktitlealt>User's Guide to Leiningen</booktitlealt></booktitle>
+
+  <bookmeta>
+      <bookid>
+	<isbn></isbn>
+	<booknumber></booknumber>
+	<maintainer>
+	  <organization></organization>
+	  <person></person>
+	</maintainer>
+      </bookid>
+      <bookrights>
+	<copyrfirst><year>2013</year></copyrfirst>
+	<!-- <copyrlast><year>2013</year></copyrlast> -->
+	<bookowner>
+	  <person>Gregg Reynolds</person>
+	  <!-- <organization>Retro Tools, Inc.</organization> -->
+	</bookowner>
+    </bookrights>
+
+    <authorinformation>
+      <personinfo>
+        <namedetails>
+          <personname>
+            <firstname>Gregg</firstname>
+            <lastname>Reynolds</lastname>
+          </personname>
+        </namedetails>
+      </personinfo>
+
+      <!-- <organizationinfo> -->
+        <!-- <namedetails> -->
+        <!--   <organizationnamedetails> -->
+        <!--     <organizationname>Mobile Ink</organizationname> -->
+        <!--   </organizationnamedetails> -->
+        <!-- </namedetails> -->
+
+      <!--   <addressdetails> -->
+      <!-- 	  <thoroughfare></thoroughfare> -->
+      <!-- 	  <locality> -->
+      <!-- 	    <postalcode></postalcode> -->
+      <!-- 	    <localityname>Chicago</localityname> -->
+      <!-- 	  </locality> -->
+      <!-- 	  <country>USA</country> -->
+      <!-- 	</addressdetails> -->
+
+      <!--   <contactnumbers> -->
+      <!--     <contactnumber></contactnumber> -->
+      <!--   </contactnumbers> -->
+
+      <!--   <emailaddresses> -->
+      <!--     <emailaddress>editor@mobileink.com</emailaddress> -->
+      <!--   </emailaddresses> -->
+
+      <!--   <urls> -->
+      <!--     <url>blog.mobileink.com</url> -->
+      <!--   </urls> -->
+      <!-- </organizationinfo> -->
+    </authorinformation>
+
+    <authorinformation>
+      <personinfo>
+        <namedetails>
+          <personname>
+            <firstname>Joe</firstname>
+            <lastname>Public</lastname>
+          </personname>
+        </namedetails>
+      </personinfo>
+    </authorinformation>
+
+    <authorinformation>
+      <personinfo>
+        <namedetails>
+          <personname>
+            <firstname>Jane</firstname>
+            <lastname>McDev</lastname>
+          </personname>
+        </namedetails>
+      </personinfo>
+    </authorinformation>
+
+    <authorinformation>
+      <personinfo>
+        <namedetails>
+          <personname>
+            <firstname>Castro</firstname>
+            <lastname>de Thousands</lastname>
+          </personname>
+        </namedetails>
+      </personinfo>
+      <!-- <organizationinfo> -->
+      <!--   <namedetails> -->
+      <!--     <organizationnamedetails> -->
+      <!--       <organizationname>Mobile Ink</organizationname> -->
+      <!--     </organizationnamedetails> -->
+      <!--   </namedetails> -->
+
+      <!--   <addressdetails> -->
+      <!-- 	  <thoroughfare></thoroughfare> -->
+      <!-- 	  <locality> -->
+      <!-- 	    <postalcode></postalcode> -->
+      <!-- 	    <localityname>Chicago</localityname> -->
+      <!-- 	  </locality> -->
+      <!-- 	  <country>USA</country> -->
+      <!-- 	</addressdetails> -->
+
+      <!--   <contactnumbers> -->
+      <!--     <contactnumber></contactnumber> -->
+      <!--   </contactnumbers> -->
+
+      <!--   <emailaddresses> -->
+      <!--     <emailaddress>editor@mobileink.com</emailaddress> -->
+      <!--   </emailaddresses> -->
+
+      <!--   <urls> -->
+      <!--     <url>blog.mobileink.com</url> -->
+      <!--   </urls> -->
+      <!-- </organizationinfo> -->
+    </authorinformation>
+
+    <critdates>
+      <created date="2013-08-30" golive=""/>
+    </critdates>
+  </bookmeta>
+
+  <frontmatter chunk="to-content">
+    <booklists chunk="to-content">
+      <toc chunk="to-content" copy-to="index.html"/>
+      <figurelist chunk="to-content" copy-to="index.html"/>/>
+      <tablelist chunk="to-content" copy-to="index.html"/>/>
+    </booklists>
+
+    <bookabstract chunk="to-content" href="ug/abstract.dita"/>
+    <notices chunk="to-content"
+	     href="ug/notices.dita">
+      <topicref chunk="to-content"
+		href="ug/trademarks.dita"></topicref>
+    </notices>
+  </frontmatter>
+
+  <!-- ################################################################ -->
+  <part chunk="to-content" navtitle="Basics">
+    <chapter chunk="to-content"
+	     href="ug/whatisleiningen.dita">
+      <topicref href="ug/config.dita"/>
+      <topicref href="ug/build.dita"/>
+    </chapter>
+
+    <chapter chunk="to-content" href="ug/gettingstarted.dita">
+      <topicref href="ug/install.dita"/>
+      <topicref href="ug/usage.dita"/>
+    </chapter>
+
+    <!-- <chapter chunk="to-content" -->
+    <!-- 	     nav-title="Projects" -->
+    <!-- 	     href="ug/projects.dita"> -->
+    <!--   <topicref href="ug/projstruct.dita"/> -->
+    <!--   <topicref href="ug/projfile.dita"/> -->
+    <!-- </chapter> -->
+
+    <!-- <chapter chunk="to-content" -->
+    <!-- 	     navtitle="Options " -->
+    <!-- 	     href="ug/options.dita"> -->
+    <!--   <topicref href="ug/options.dita"/> -->
+    <!-- </chapter> -->
+
+  </part>
+
+  <!-- ################################################################ -->
+  <part chunk="to-content" navtitle="Tasks">
+    <chapter chunk="to-content"
+	     href="ug/tasks.dita">
+      <!-- <topicref href="ug/config.dita"/> -->
+    </chapter>
+
+  </part>
+
+  <!-- ################################################################ -->
+  <part chunk="to-content" navtitle="Dependency Management">
+    <chapter chunk="to-content"
+	     href="ug/deps.dita">
+      <!-- <topicref href="ug/config.dita"/> -->
+    </chapter>
+
+  </part>
+
+  <!-- ################################################################ -->
+  <part chunk="to-content" navtitle="Profiles">
+    <chapter chunk="to-content"
+	     href="ug/profiles.dita">
+      <!-- <topicref href="ug/config.dita"/> -->
+    </chapter>
+
+  </part>
+
+  <!-- ################################################################ -->
+  <part chunk="to-content" navtitle="Developing with REPL">
+    <chapter chunk="to-content"
+	     href="ug/devrepl.dita">
+      <!-- <topicref href="ug/config.dita"/> -->
+    </chapter>
+  </part>
+
+  <!-- ################################################################ -->
+  <part chunk="to-content" navtitle="Testing">
+    <chapter chunk="to-content"
+	     href="ug/testing.dita">
+      <!-- <topicref href="ug/config.dita"/> -->
+    </chapter>
+  </part>
+
+  <!-- ################################################################ -->
+  <part chunk="to-content" navtitle="Deployment">
+    <chapter chunk="to-content"
+	     href="ug/deployment.dita">
+      <!-- <topicref href="ug/config.dita"/> -->
+    </chapter>
+  </part>
+
+  <!-- <appendix chunk="to-content" href="ug/leinref.dita"/> -->
+
+  <appendix chunk="to-content" href="ug/contrib.dita"/>
+
+  <backmatter>
+    <booklists>
+      <bibliolist/>
+      <indexlist chunk="to-content"/>
+    </booklists>
+  </backmatter>
+</bookmap>

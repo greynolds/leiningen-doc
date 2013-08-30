@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+"http://docs.oasis-open.org/dita/dtd/concept.dtd">
+<concept id="whatisleiningen">
+  <title>What is Leiningen?</title>
+  <conbody>
+    <p>
+      "Leiningen is for automating Clojure projects without setting your hair on fire."
+    </p>
+  </conbody>
+</concept>

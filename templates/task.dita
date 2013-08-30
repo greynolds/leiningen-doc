@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+"http://docs.oasis-open.org/dita/dtd/task.dtd">
+<task id="">
+  <title></title>
+
+  <context>
+    provides background information for the task. This information helps the user understand what the purpose of the task is and what they will gain by completing the task.
+  </context>
+
+  <taskbody>
+    <prereq>
+    </prereq>
+
+    <steps>
+      <step>
+	<cmd>
+	  Provides the active voice instruction to the user for
+	  completing the step, and should not be more than one
+	  sentence.  Not an element of the Programming vocab; it is
+	  not treated as a programming language command.
+	</cmd>
+      <substeps>
+	<substep importance="optional"><cmd>which is done by doing this</cmd></substep>
+	<substep importance="required"><cmd>and then this.</cmd></substep>
+      </substeps>
+      <choicetable>
+	<chhead>
+	  <choptionhd>Do something</choptionhd>
+	  <chdeschd>Or Else this</chdeschd>
+	</chhead>
+	<chrow><choption>Do this</choption>
+	<chdesc>and this will happen</chdesc></chrow>
+	<chrow><choption>Do that</choption>
+	<chdesc>and that will happen</chdesc></chrow>
+      </choicetable>
+      </step>
+    </steps>
+  </taskbody>
+</task>
