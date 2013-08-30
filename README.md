@@ -16,8 +16,8 @@ DITA documentation for Leiningen
 Whitepapers: 
 
  * [An XML Architecture for Technical Documentation: The Darwin Information Typing Architecture](http://www.writersua.com/articles/DITA/)
- * [Hacking the DITA Open Toolkit](http://www.scriptorium.com/whitepapers/hackingot/index.html)
- * [Customizing PDF Output in the DITA Open Toolkit](http://www.scriptorium.com/whitepapers/ditaotpdf/DITA-PDF-tweaks.pdf)
+ * [Hacking the DITA Open Toolkit](http://www.scriptorium.com/whitepapers/hackingot/index.html) (HTML)  ([PDF version](http://www.scriptorium.com/whitepapers/hackingot/hackingot.pdf)
+ * [Customizing PDF Output in the DITA Open Toolkit](http://www.scriptorium.com/whitepapers/ditaotpdf/DITA-PDF-tweaks.pdf) (PDF)
 
 Markdown:
 
