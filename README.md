@@ -7,6 +7,10 @@ DITA documentation for Leiningen
 
 # DITA Resources
 
+[DITA 1.2 Spec](http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.html)
+
+
+
 [DITA XML.org](http://dita.xml.org/) - "the official community gathering place and information resource for the DITA OASIS Standard."
 
 [DITA Open Toolkit](http://dita-ot.github.io/)
