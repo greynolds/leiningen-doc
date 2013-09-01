@@ -61,11 +61,11 @@ configuration.</shortdesc>
 ./project.clj
 ./README.md
 ./src
-./src/my_stuff
-./src/my_stuff/core.clj
+./src/my_app
+./src/my_app/core.clj
 ./test
-./test/my_stuff
-./test/my_stuff/core_test.clj
+./test/my_app
+./test/my_app/core_test.clj
 </pre>
 </stepresult>
 </step>
