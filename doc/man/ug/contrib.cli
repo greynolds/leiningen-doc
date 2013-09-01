@@ -1,0 +1,51 @@
+
+.ad l
+
+.ll 72
+
+.ce 1000
+\fBContributing to this document\fR
+.ce 0
+
+.sp 2
+This is a DITA document. The original is available from the
+github project.
+.sp 2
+Please use the Issues Tracker to register bugs, corrections,
+enhancement requests, etc. Alternatively, you can clone the
+repository and edit the text directly. If you do please credit
+yourself in the metadata.
+.SH "Intellectual property"
+\fBIntellectual property\fR
+.sp 2
+This work is licensed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 3.0 Unported License. To
+view a copy of this license, visit
+http://creativecommons.org/licenses/by-nc-sa/3.0/ or send a
+letter to Creative Commons, 171 Second Street, Suite 300, San
+Francisco, California, 94105, USA.
+.SH "DITA"
+\fBDITA\fR
+.sp 2
+DITA (Darwin Information Typing Architecture) is an OASIS
+Standard for writing, managing, and publishing information. It
+supports "topic-based" authoring.
+.sp 2
+The DITA Wiki Knowledgebase contains lots of information on DITA,
+from introductions and overviews to detailed documentation.
+.sp 2
+Another good overview is DITA for the Impatient from XMLMind.
+.sp 2
+The DITA Language Specification documents the elements and
+atributes of the DITA Schema.
+.SH "Tools"
+\fBTools\fR
+.sp 2
+There are two open source DITA transformation tools available:
+.sp 2
+*  DITA Open Toolkit
+.sp 2
+*  XMLMind DITA Converter
+.sp 2
+
+.sp 2

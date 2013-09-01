@@ -1,0 +1,32 @@
+
+.ad l
+
+.ll 72
+
+.ce 1000
+\fBGetting Started\fR
+.ce 0
+
+.sp 2
+We get started by first exploring a minimal project, and then
+exploring the Leiningen infrastructure. This should give us a
+good general idea of what pieces are involved and how the work
+together.
+.sp 2
+Before delving into the details we take a brief tour of:
+.sp 2
+*  A minimal project
+.sp 2
+*  The Leiningen infrastructure
+.sp 2
+   Installation
+.br
+
+.sp 2
+   Project Structure and Dynamics
+.br
+   We create a minimal project and explore its structure and
+   configuration.
+.sp 2
+   The Leiningen Infrastructure
+.br

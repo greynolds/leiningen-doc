@@ -1,0 +1,14 @@
+
+.ad l
+
+.ll 72
+
+.ce 1000
+\fBEmbedding Leiningen\fR
+.ce 0
+
+.sp 2
+Leiningen is a Clojure library. You can use it from your own
+code.
+.sp 2
+Should this go in a separate "Developer's Manual"?

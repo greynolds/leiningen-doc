@@ -1,0 +1,18 @@
+
+.ad l
+
+.ll 72
+
+.ce 1000
+\fBTemplates\fR
+.ce 0
+
+.sp 2
+All you really need to know is \fRlein new\fR.
+.sp 2
+A word here about how Leiningen finds templates, and about
+clojars, so the user can troubleshoot in case something goes
+wrong.
+.sp 2
+See the Developer's Manual for information on how to write your
+own templates.

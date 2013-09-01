@@ -1,0 +1,41 @@
+
+.ad l
+
+.ll 72
+
+.ce 1000
+\fBInstallation\fR
+.ce 0
+
+.sp 2
+
+.SH "Unix-like systems"
+\fBUnix-like systems\fR
+.sp 2
+If your preferred package manager has a relatively recent version
+of Leiningen, try that first. Otherwise you can install by hand:
+.sp 2
+Leiningen bootstraps itself using the lein shell script; there is
+no separate install script. It handles installing its own
+dependencies, which means the first run will take longer.
+.sp 2
+1. Make sure you have a Java JDK version 6 or later.
+.sp 2
+2. Download the script
+.sp 2
+3. Place it on your \fI$PATH\fR. (~/bin is a good choice if it is
+   on your path.)
+.sp 2
+4. Set it to be executable. (chmod 755 ~/bin/lein)
+.SH "Windows"
+\fBWindows\fR
+.sp 2
+There is an installer which will handle downloading and placing
+Leiningen and its dependencies.
+.sp 2
+The manual method of putting the batch file. on your \fIPATH\fR
+and running \fRlein self-install\fR should still work for most
+users. If you have Cygwin you should be able to use the shell
+script above rather than the batch file.
+.sp 2
+Parent topic: Getting Started

@@ -1,0 +1,17 @@
+
+.ad l
+
+.ll 72
+
+.ce 1000
+\fBTrampolines\fR
+.ce 0
+
+.sp 2
+What is a trampoline? What problem do trampolines solve? How does
+one use Leiningen's trampoline facility?
+.SH ""
+\fB\fR
+.sp 2
+
+.sp 2

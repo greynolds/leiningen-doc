@@ -1,0 +1,26 @@
+
+.ad l
+
+.ll 72
+
+.ce 1000
+\fBTrademarks\fR
+.ce 0
+
+.sp 2
+The following terms are trademarks of the Foobar Corp. in the
+United States, other countries, or both:
+.sp 2
+   Foobarista
+.sp 2
+The following terms are trademarks of other companies:
+.sp 2
+Red, Orange, Yellow, Green, Blue, Indigo, and Violot are
+registered trademarks of Rainbow Corporation and/or its
+affiliates.
+.sp 2
+Linux is a trademark of Linus Torvalds in the United States,
+other countries, or both.
+.sp 2
+Other company, product, or service names may be trademarks or
+service marks of others.

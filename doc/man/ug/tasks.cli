@@ -1,0 +1,178 @@
+
+.ad l
+
+.ll 72
+
+.ce 1000
+\fBTasks\fR
+.ce 0
+
+.sp 2
+Overview ...
+.SH ""
+\fB\fR
+.sp 2
+
+.sp 2
+
+.sp 2
+
+.ce 1000
+\fBPreinstalled tasks\fR
+.ce 0
+
+.sp 2
+Overview ...
+.sp 2
+\fBLeiningen 2.3.2 Standard Tasks\fR
+.sp 2
+\fBcheck\fR
+.br
+         Check syntax and warn on reflection.
+.sp 2
+\fBclasspath\fR
+.br
+         Write the classpath of the current project to
+         output-file.
+.sp 2
+\fBclean\fR
+.br
+         Remove all files from paths in project's clean-targets.
+.sp 2
+\fBcompile\fR
+.br
+         Compile Clojure source into .class files.
+.sp 2
+\fBdeploy\fR
+.br
+         Deploy jar and pom to remote repository.
+.sp 2
+\fBdeps\fR
+.br
+         Show details about dependencies.
+.sp 2
+\fBdifftest\fR
+.br
+
+.sp 2
+\fBdo\fR
+.br
+         Higher-order task to perform other tasks in succession.
+.sp 2
+\fBhelp\fR
+.br
+         Display a list of tasks or help for a given task or
+         subtask.
+.sp 2
+\fBinstall\fR
+.br
+         Install current project to the local repository.
+.sp 2
+\fBjar\fR
+.br
+         Package up all the project's files into a jar file.
+.sp 2
+\fBjavac\fR
+.br
+         Compile Java source files.
+.sp 2
+\fBlocalrepo\fR
+.br
+         Work with local Maven repository
+.sp 2
+\fBmarg\fR
+.br
+         Run Marginalia against your project source files.
+.sp 2
+\fBmustache\fR
+.br
+         Evaluate a Mustache template.
+.sp 2
+\fBnew\fR
+.br
+         Generate scaffolding for a new project based on a
+         template.
+.sp 2
+\fBplugin\fR
+.br
+         DEPRECATED. Please use the :user profile instead.
+.sp 2
+\fBpom\fR
+.br
+         Write a pom.xml file to disk for Maven interoperability.
+.sp 2
+\fBpprint\fR
+.br
+         Pretty-print a representation of the project map.
+.sp 2
+\fBrepl\fR
+.br
+         Start a repl session either with the current project or
+         standalone.
+.sp 2
+\fBretest\fR
+.br
+         Run only the test namespaces which failed last time
+         around.
+.sp 2
+\fBrun\fR
+.br
+         Run the project's -main function.
+.sp 2
+\fBsearch\fR
+.br
+         Search remote maven repositories for matching jars.
+.sp 2
+\fBshow-profiles\fR
+.br
+         List all available profiles or display one if given an
+         argument.
+.sp 2
+\fBswank\fR
+.br
+         obsolete??
+.sp 2
+\fBtest\fR
+.br
+         Run the project's tests.
+.sp 2
+\fBtrampoline\fR
+.br
+         Run a task without nesting the project's JVM inside
+         Leiningen's.
+.sp 2
+\fBuberjar\fR
+.br
+         Package up the project files and all dependencies into a
+         jar file.
+.sp 2
+\fBupdate-in\fR
+.br
+         Perform arbitrary transformations on your project map.
+.sp 2
+\fBupgrade\fR
+.br
+         Upgrade Leiningen to specified version or latest stable.
+.sp 2
+\fBversion\fR
+.br
+         Print version for Leiningen and the current JVM.
+.sp 2
+\fBwith-profile\fR
+.br
+         Apply the given task with the profile(s) specified.
+.sp 2
+
+.sp 2
+
+.ce 1000
+\fBUser-defined Tasks: Plugins\fR
+.ce 0
+
+.sp 2
+Overview ...
+.SH ""
+\fB\fR
+.sp 2
+
+.sp 2

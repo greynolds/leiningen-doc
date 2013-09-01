@@ -1,0 +1,45 @@
+
+.ad l
+
+.ll 72
+
+.ce 1000
+\fBThe Leiningen Infrastructure\fR
+.ce 0
+
+.sp 2
+Leiningen's infrastructure config files, the local repo, remote
+repos, etc. We should also include default profiles such as
+:base, since they are just as fundamental. This topic provides a
+brief overview of these parts and how they fit together.
+.sp 2
+Parent topic: Getting Started
+.sp 2
+
+.ce 1000
+\fBExternal\fR
+.ce 0
+
+.sp 2
+Directories, files, env vars used by Leiningen
+.sp 2
+Directories: ~/.lein, ~/lein/profiles.d, etc; ~/.m2/repository;
+.sp 2
+Files: ~/.lein/profiles.clj
+.sp 2
+Environment variables
+.sp 2
+Command line options
+.sp 2
+Anything else Leiningen can take from the env?
+.sp 2
+Do this
+.sp 2
+
+.ce 1000
+\fBInternal infrastructure: profiles, etc.\fR
+.ce 0
+
+.sp 2
+Profiles and other internally defined (but overridable) stuff on
+which Leiningen's functionality depends.

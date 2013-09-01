@@ -1,0 +1,62 @@
+
+.ad l
+
+.ll 72
+
+.ce 1000
+\fBIntroduction: Configuration, Customization, Coordination\fR
+.ce 0
+
+.sp 2
+"Leiningen is for automating Clojure projects without setting
+your hair on fire."
+.sp 2
+Leiningent is a tool for:
+.sp 2
+\fBConfiguration\fR
+.br
+         Use it to "configure" tools, i.e. set options, for
+         various tasks.
+.sp 2
+\fBCustomization\fR
+.br
+         Groups and individuals can "inherit" general
+         configurations and then customize them on a per-task
+         and/or per-project basis.
+.sp 2
+\fBCoordination\fR
+.br
+         Use it to integrate and coordinate related activities.
+         For example, quality assurance, code check-in, and issue
+         tracking are related activities. Leiningen can help you
+         automate standard procedures such as: first QA check
+         code, then check it in with a reference to the bug it
+         fixes, and then close the bug in the Issues Tracker,
+         annotating it with the commit ID.
+.sp 2
+
+.ce 1000
+\fBThe Problem\fR
+.ce 0
+
+.sp 2
+Leiningent is a general "CCC" (configuration, customization, and
+coordination) tool.
+.sp 2
+This section describes the sort of problems Leiningen is designed
+to solve: configuration, coordination, etc.
+.sp 2
+etc
+.sp 2
+
+.ce 1000
+\fBThe Solution\fR
+.ce 0
+
+.sp 2
+This section describes in general how Leiningen solves the
+problems described in the previous topic. I.e. it's more about
+the strategies Leiningen adopts than the specific implementation
+techniques; they are the subject of the remainder of this book..
+.sp 2
+etc

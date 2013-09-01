@@ -1,0 +1,13 @@
+
+.ad l
+
+.ll 72
+
+.ce 1000
+\fBPlugin Development\fR
+.ce 0
+
+.sp 2
+How to implement custom tasks (plugins).
+.sp 2
+Should this go in a separate "Developer's Manual"?
