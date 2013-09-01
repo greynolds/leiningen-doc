@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="task"/>
+<meta name="DC.Title" content="Project Structure and Dynamics"/>
+<meta name="abstract" content="We create a minimal project and explore its structure and configuration."/>
+<meta name="description" content="We create a minimal project and explore its structure and configuration."/>
+<meta name="DC.subject" content="New project"/>
+<meta name="keywords" content="New project"/>
+<meta name="DC.Relation" scheme="URI" content="../ug/gettingstarted.html"/>
+<meta name="DC.Creator" content="Castro de Thousands Other Contributors"/>
+<meta name="DC.Date.Created" content="2013-08-30"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="newproj"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../commonltr.css"/>
+<title>Project Structure and Dynamics</title>
+</head>
+<body id="newproj">
+
+
+<h1 class="title topictitle1">Project Structure and Dynamics</h1>
+
+
+
+<div class="body taskbody"><p class="shortdesc">We create a minimal project and explore its structure and
+configuration.</p>
+
+
+<div class="section context">
+<p class="p">
+  A minimal Leiningen project involves: a directory structure, a
+  project configuration file (project.clj), and source code files.  In
+  addition to these static resources, Leiningen dynamically determines
+  a project map, a dependency tree, and several other structures.
+  This section takes you through some simple steps to exlore these
+  elements.
+</p>
+
+</div>
+
+<ol class="ol steps"><li class="li step stepexpand"><span class="ph cmd">Create a new project by executing: <kbd class="ph userinput">lein new app
+  my-app</kbd></span>
+  <div class="itemgroup info">
+    where <kbd class="ph userinput">lein</kbd> is the Leiningen command, and the args are:
+    <dl class="dl parml">
+      
+	<dt class="dt pt dlterm">new</dt>
+
+	<dd class="dd pd">a Leiningen <em class="ph i">task</em>.  To see the syntax and semantics
+	of this task, run <kbd class="ph userinput">lein help new</kbd>.  To
+	see a list of the tasks that come preinstalled, run
+	<kbd class="ph userinput">lein help</kbd>.
+	</dd>
+
+      
+      
+	<dt class="dt pt dlterm">app</dt>
+
+	<dd class="dd pd">is the name of a project template, in this case the
+	default application template.  To see a list of preinstalled
+	templates, run <kbd class="ph userinput">lein help new</kbd>.
+	Leiningen's concept of <em class="ph i">task</em> is discussed in detail
+	under the X topic of this guide.</dd>
+
+      
+      
+	<dt class="dt pt dlterm">my-app</dt>
+
+	<dd class="dd pd">is the name to be used for the new project</dd>
+
+      
+    </dl>
+
+  </div>
+  <div class="itemgroup stepresult">
+    <p class="p">
+  This will create a hierarchy of directories and populate it with
+  some files generated from templates:
+    </p>
+
+<pre class="pre">
+.
+./.gitignore
+./doc
+./doc/intro.md
+./project.clj
+./README.md
+./src
+./src/my_stuff
+./src/my_stuff/core.clj
+./test
+./test/my_stuff
+./test/my_stuff/core_test.clj
+</pre>
+
+</div>
+</li>
+<li class="li step stepexpand"><span class="ph cmd">Take a look at the Leiningen project file buy running
+<kbd class="ph userinput">less my-app/project.clj</kbd></span>
+<div class="itemgroup stepresult">
+  You should see something like:
+  <pre class="pre">
+(defproject my-app "0.1.0-SNAPSHOT"
+  :description "FIXME: write description"
+  :url "http://example.com/FIXME"
+  :license {:name "Eclipse Public License"
+            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :dependencies [[org.clojure/clojure "1.5.1"]])
+  </pre>
+
+  <div class="note note"><span class="notetitle">Note:</span> 
+    This has the form of a function application, where
+    <samp class="ph codeph">defproject</samp> is the function, and the args come as
+    a list of pairs.  In fact, <samp class="ph codeph">defproject</samp> is a macro
+    that expands into the definition of a Clojure map named
+    <samp class="ph codeph">project</samp>.  Each task - both those preinstalled and
+    those defined by plugins - takes this <samp class="ph codeph">project</samp> map
+    as input.  The key point is that the key-value pairs of the
+    <samp class="ph codeph">project</samp> map are thus available for use by task
+    implementations to control setting of options etc. for the
+    processes they manage.
+  </div>
+
+  <div class="note note"><span class="notetitle">Note:</span> 
+    The final <samp class="ph codeph">project</samp> map is determined by a
+    combination of several sources in addition to project.clj, such as
+    <var class="keyword varname">~/.lein/profiles.clj</var>.  See X for details.
+  </div>
+
+  <p class="p">
+    In this minimal example, the only really functional parameter is
+    <samp class="ph codeph">:dependencies</samp>.  This is used to specify which
+    libraries/jars the project uses (and thus depends on).  One of the
+    best things about Leiningen is its powerful management of
+    dependencies.  Using the [?] library under the hood, Leiningen is
+    able to construct the entire dependency graph for the project and
+    arrange for everything needed to be installed.  Leiningen's
+    dependency management capabilities are described in X.
+  </p>
+
+  <div class="note important"><span class="importanttitle">Important:</span> 
+    Leiningen dependency specification uses the naming conventions
+    established by Maven: artifact-group/artifact-id.  Etc.  See X for
+    details.
+  </div>
+
+</div>
+</li>
+<li class="li step stepexpand"><span class="ph cmd">Examine the project map:
+<kbd class="ph userinput">lein pprint</kbd>
+</span>
+<div class="itemgroup stepresult">
+  You should see something like:
+  <pre class="pre">
+{:compile-path "/Users/gar/tmp/my-app/target/classes",
+ :group "my-app",
+ :license
+ {:name "Eclipse Public License",
+  :url "http://www.eclipse.org/legal/epl-v10.html"},
+ :global-vars {},
+ :checkout-deps-shares
+ [:source-paths
+  :test-paths
+  :resource-paths
+  :compile-path
+  #&amp;Var@3e25e2b8:
+    #amp;classpath$checkout_deps_paths leiningen.core.classpath$checkout_deps_paths@89bbe8c&gt;&gt;],
+ :dependencies
+ ([org.clojure/clojure "1.5.1"]
+  [org.clojure/tools.nrepl "0.2.3" :exclusions ([org.clojure/clojure])]
+  [clojure-complete/clojure-complete
+   "0.2.3"
+   :exclusions
+   ([org.clojure/clojure])]),
+ :plugin-repositories
+ [["central" {:snapshots false, :url "http://repo1.maven.org/maven2/"}]
+  ["clojars" {:url "https://clojars.org/repo/"}]],
+ :test-selectors {:default (constantly true)},
+ :target-path "/Users/gar/tmp/my-app/target",
+ :name "my-app",
+ :deploy-repositories
+ [["clojars"
+   {:username :gpg,
+    :url "https://clojars.org/repo/",
+    :password :gpg}]],
+ :root "/Users/gar/tmp/my-app",
+ :offline? false,
+ :source-paths ("/Users/gar/tmp/my-app/src"),
+ :certificates ["clojars.pem"],
+ :version "0.1.0-SNAPSHOT",
+ :jar-exclusions [#"^\."],
+ :profiles {:uberjar {:aot :all}},
+ :prep-tasks ["javac" "compile"],
+ :url "http://example.com/FIXME",
+ :repositories
+ [["central" {:snapshots false, :url "http://repo1.maven.org/maven2/"}]
+  ["clojars" {:url "https://clojars.org/repo/"}]],
+ :resource-paths
+ ("/Users/gar/tmp/my-app/dev-resources"
+  "/Users/gar/tmp/my-app/resources"),
+ :uberjar-exclusions [#"(?i)^META-INF/[^/]*\.(SF|RSA|DSA)$"],
+ :main my-app.core,
+ :jvm-opts ["-XX:+TieredCompilation" "-XX:TieredStopAtLevel=1"],
+ :eval-in :subprocess,
+ :plugins
+ ([lein-localrepo/lein-localrepo "0.4.1"]
+  [lein-difftest/lein-difftest "1.3.8"]
+  [org.clojure/java.classpath "0.2.0"]
+  [lein-marginalia/lein-marginalia "0.7.1"]
+  [lein-mustache/lein-mustache "0.2"]
+  [lein-pprint/lein-pprint "1.1.1"]),
+ :native-path "/Users/gar/tmp/my-app/target/native",
+ :description "FIXME: write description",
+ :test-paths ("/Users/gar/tmp/my-app/test"),
+ :clean-targets [:target-path],
+ :aliases nil}
+  </pre>
+
+
+  <p class="p">
+    Take some time to look this over.  Most of these parameters you
+    will never have to deal with, but it's good to have an idea of
+    what sorts of things Leiningen is interested in.
+  </p>
+
+
+  <div class="note note"><span class="notetitle">Note:</span> 
+    The predefined paramters are documented in the Technical Reference
+    Manual.  Other chapters of this User's Guide explain how to use
+    them.
+  </div>
+
+
+  <div class="note note"><span class="notetitle">Note:</span> 
+    We should distinguish between the project map that results from
+    Leiningen's work and the defproject map in project.clj that forms
+    the starting point for project map construction.
+  </div>
+
+
+</div>
+</li>
+<li class="li step stepexpand"><span class="ph cmd">Tell Leiningen to install all dependencies by running
+<kbd class="ph userinput">lein deps</kbd></span>
+<div class="itemgroup info">Since you already have Clojure installed, you probably won't see any output.</div>
+</li>
+<li class="li step stepexpand"><span class="ph cmd">Check your dependency tree:
+<kbd class="ph userinput">lein deps :tree</kbd></span>
+<div class="itemgroup stepresult">
+  You should see something like the following:
+<pre class="pre">
+ [clojure-complete "0.2.3" :exclusions [[org.clojure/clojure]]]
+ [org.clojure/clojure "1.5.1"]
+ [org.clojure/tools.nrepl "0.2.3" :exclusions [[org.clojure/clojure]]]
+</pre>
+
+<p class="p">
+  This is a complete listing of the jars your project depends on,
+  derived from your project.clj :dependencies parameter plus a set of
+  default maps to be described later.  Since this is a tree
+  representation, you can infer that these three libraries are
+  independently specified; none of them has required any of the others
+  as a dependency.  In fact, <samp class="ph codeph">clojure-complete</samp> and
+  <samp class="ph codeph">org.clojure/tools.nrepl</samp> are both specified as
+  dependencies by the default <samp class="ph codeph">:base</samp> <em class="ph i">profile</em>,
+  which means that they will always be in the dependency tree for
+  every project (unless overriden).  Profiles are named maps that can
+  be used to customize the <samp class="ph codeph">project</samp> map in various
+  ways; they are fully described in X.
+</p>
+
+</div>
+
+</li>
+<li class="li step stepexpand"><span class="ph cmd">Now let's take a look at the application code installed by
+the <samp class="ph codeph">app</samp> template.  Use your editor, or run <kbd class="ph userinput">cat src/my_app/core.clj</kbd></span>
+<div class="itemgroup stepresult">
+  <p class="p">The contents of <span class="ph filepath">my-app/src/my_app/core.clj</span>
+  should look something like:</p>
+
+<pre class="pre">
+(ns my-app.core
+  (:gen-class))
+
+(defn -main
+  "I don't do a whole lot ... yet."
+  [&amp; args]
+  (println "Hello, World!"))
+</pre>
+
+<div class="note note"><span class="notetitle">Note:</span> 
+  The <samp class="ph codeph">:gen-class</samp> option and the definition of
+  <samp class="ph codeph">-main</samp>.  Remember this was produced by the
+  application template, rather than the library template.  So it
+  assumes you want to execute the result, which means you need to
+  generate Java byte code.  That's what :gen-class does.  You also
+  need a main entry point; thats what <samp class="ph codeph">-main</samp> does.
+</div>
+
+<div class="note warning"><span class="warningtitle">Warning:</span> 
+  In case it isn't obvious: to effectively use Leiningen, you need to
+  know Clojure.  That is, the better your mastery of Clojure, the more
+  you can do with Leiningen.  Leiningen is a Clojure application, after all.
+</div>
+
+</div>
+</li>
+</ol>
+
+<div class="section result">
+</div>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../ug/gettingstarted.html" title="We get started by first exploring a minimal project, and then exploring the Leiningen infrastructure. This should give us a good general idea of what pieces are involved and how the work together.">Getting Started</a></div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "../dtd/technicalContent/dtd/map.dtd">
+<map chunk="by-document">
+  <topicref href="ug/whatisleiningen.dita"/>
+  <topicref href="ug/install.dita"/>
+  <topicref href="ug/gettingstarted.dita"/>
+  <topicref href="ug/minproj.dita"/>
+  <topicref href="ug/leininfrastruct.dita"/>
+  <topicref href="ug/config.dita"/>
+  <topicref href="ug/build.dita"/>
+  <topicref href="ug/parms.dita"/>
+  <topicref href="ug/vc.dita"/>
+</map>

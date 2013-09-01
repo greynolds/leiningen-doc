@@ -29,26 +29,8 @@
 	letter to Creative Commons, 171 Second Street, Suite 300, San
 	Francisco, California, 94105, USA.
       </p>
-      <p>
-	That means you can create a derived work, but you can't sell
-	it.  If this document ever becomes the complete,
-	well-organized and well-written document I have in mind, it
-	might be possible to sell print copies and generate a few
-	bucks for Mulgara.  The idea being that any profits from this
-	document in any form will go toward development of Mulgara.
-	For this to work, obviously, there must be only one version
-	available.
-      </p>
-      <p>
-	Therefore, I retain copyright to the document and any changes
-	to it, including the right to offer a commercial version of
-	this document and any changes to it.  As proxy for the
-	"community"; somebody has to own the thing.  Ideally ownership
-	would be assigned to a foundation or something, but since we
-	don't have one of those, I'll have to do.
-      </p>
     </section>
-    
+
     <section>
       <title>DITA</title>
       <p>
@@ -72,7 +54,7 @@
 	Another good overview is <xref format="html"
 	href="http://www.xmlmind.com/tutorials/DITA/index.html">DITA
 	for the Impatient</xref> from <xref format="html"
-	href="">XMLMind</xref>.
+	href="http://www.xmlmind.com/tutorials/DITA/">XMLMind</xref>.
       </p>
       <p>
 	The <xref format="html"
@@ -84,22 +66,21 @@
     <section>
       <title>Tools</title>
       <p>
-	This document has been developed using the <xref format="html"
-	href="http://www.xmlmind.com/ditac/">XMLMind DITA
-	Converter</xref>.  XMLMind also publishes the superb <xref
-	format="html"
-	href="http://www.xmlmind.com/xmleditor/">XXE</xref> XML
-	editor, which has <xref format="html"
-	href="http://www.xmlmind.com/xmleditor/_distrib/doc/dita/index.html">integrated
-	support for DITA authoring</xref>.  (Disclaimer: I have no
-	connection with XMLMind, I just like their products.)
+	There are two open source DITA transformation tools available:
+	<ul>
+	  <li>
+	    <xref format="html"
+		  href="http://dita-ot.sourceforge.net/">DITA Open
+	    Toolkit</xref>
+	  </li>
+	  <li>
+	    <xref format="html"
+		  href="http://www.xmlmind.com/ditac/">XMLMind DITA
+	    Converter</xref>
+	  </li>
+	</ul>
       </p>
-      <p>
-	The <xref format="html"
-	href="http://dita-ot.sourceforge.net/">DITA Open
-	Toolkit</xref> should work with this document, but it hasn't
-	been tested.
-      </p>
+
     </section>
   </body>
 

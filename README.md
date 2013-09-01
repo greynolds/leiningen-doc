@@ -9,11 +9,11 @@ DITA documentation for Leiningen
 
 [DITA 1.2 Spec](http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.html)
 
-
-
 [DITA XML.org](http://dita.xml.org/) - "the official community gathering place and information resource for the DITA OASIS Standard."
 
 [DITA Open Toolkit](http://dita-ot.github.io/)
+
+(cmd: ant -Dargs.input=$HOME/dev/leiningen-doc/userguide.ditamap -Dtranstype=pdf2)
 
 [XMLMind DITA Converter](http://www.xmlmind.com/ditac/)
 

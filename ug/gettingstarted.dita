@@ -1,24 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
-"http://docs.oasis-open.org/dita/dtd/topic.dtd">
-<topic id="backend">
-  <title>Getting Started</title>
-
-  <body>
-    <p>
-      Simple.  Install leiningen, create new skel proj, run repl
-    </p>
-    <section>
-      <title></title>
-      <p>
-    </p>
-    </section>
-
-  </body>
-
-  <related-links>
-    <!-- <link href="embed2.dita"> -->
-    <!--   <linktext/> -->
-    <!-- </link> -->
-  </related-links>
+ "../../dtd/topic.dtd">
+<topic id="configuring" xml:lang="en-us">
+<title>Getting Started</title>
+<shortdesc>We get started by first exploring a minimal project, and
+then exploring the Leiningen infrastructure.  This should give us a
+good general idea of what pieces are involved and how the work
+together.</shortdesc>
+<body>
+<p>
+  Before delving into the details we take a brief tour of:
+</p>
+<ul>
+  <li>A minimal project</li>
+  <li>The Leiningen infrastructure</li>
+</ul>
+</body>
 </topic>
