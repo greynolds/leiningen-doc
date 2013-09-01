@@ -12,10 +12,14 @@ brief overview of these parts and how they fit together.</abstract>
 </metadata></prolog>
 <task id="infra.external">
   <title>External</title>
-  <abstract>Directories and files used by Leiningen</abstract>
+  <abstract>Directories, files, env vars used by Leiningen</abstract>
 <taskbody>
 <context>
-<p>Exploring:  ~/.lein; ~/.m2/repository; </p>
+<p>Directories: ~/.lein, ~/lein/profiles.d, etc;  ~/.m2/repository; </p>
+<p>Files:  ~/.lein/profiles.clj</p>
+<p>Environment variables</p>
+<p>Command line options</p>
+<p>Anything else Leiningen can take from the env?</p>
 </context>
 <steps>
 <step><cmd>Do this</cmd>
