@@ -4,6 +4,8 @@
 <topic id="contrib">
   <title>Contributing to this document</title>
 
+  <shortdesc>WARNING: Document design can be hazardous to your other
+  interests. (Apologies to Knuth)</shortdesc>
   <body>
     <p>
       This is a DITA document.  The original is available from the

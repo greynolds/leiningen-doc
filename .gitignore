@@ -4,3 +4,8 @@
 *.jar
 *.war
 *.ear
+
+# don't add output
+*.pdf
+*.html
+*.cli

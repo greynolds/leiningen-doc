@@ -5,6 +5,30 @@ DITA documentation for Leiningen
 
 # Contributing
 
+# Building
+
+Use either ditac or DITA-OT (links below).
+
+## ditac
+
+The instructions at
+http://www.xmlmind.com/ditac/_distrib/doc/manual/manual-4.html#quickStart
+are pretty clear.  The command I use to generate PDF is:
+
+    $ /path/to/ditac tmp/ugbook.ditac.pdf ugbook.ditamap
+
+## DITA-OT
+
+The documentation isn't great, so you'll need to put in a little work
+to figure out how to make it go.  What works for me is:
+
+    <DITA_HOME> $ ant -Dargs.input=/path/to/leiningen-doc/ugbook.ditamap -Dtranstype=pdf
+
+Must be executed from the toolkit's root dir; haven't figured out how
+to get around that yet.  This puts the output in <DITA_HOME>/out.  I
+haven't been able to figure out how to specify a different output dir.
+Change the transtype parm to change the format, e.g. -Dtranstype=xhtml.
+
 # DITA Resources
 
 [DITA 1.2 Spec](http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.html)
