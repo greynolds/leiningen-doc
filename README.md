@@ -7,20 +7,33 @@ DITA documentation for Leiningen
 
 # Building
 
-Use either ditac or DITA-OT (links below).
+Use either ditac or DITA-OT (links below).  To generate PDF output,
+you need an XSLFO processor.  I have a copy of XEP (typesetting Geek
+here), which works great, so I have not tested FOP.
 
 ## ditac
 
 The instructions at
 http://www.xmlmind.com/ditac/_distrib/doc/manual/manual-4.html#quickStart
-are pretty clear.  The command I use to generate PDF is:
+are pretty clear.  I have a copy of XEP, so I set up ditac.options as
+per
+http://www.xmlmind.com/ditac/_distrib/doc/manual/commandLine.html#commandLine__ditac_options_file,
+and the command I use to generate PDF is:
 
     $ /path/to/ditac tmp/ugbook.ditac.pdf ugbook.ditamap
 
 ## DITA-OT
 
 The documentation isn't great, so you'll need to put in a little work
-to figure out how to make it go.  What works for me is:
+to figure out how to make it go.  The relevant documentation is at
+http://dita-ot.github.io/1.8/readme/tranforming-dita-content.html.
+
+*CAVEAT* You have to cd to the kit root dir and run `startcmd.sh` (or
+ .bat) first.
+
+I use the ant technique
+(http://dita-ot.github.io/1.8/readme/DITA-antuse.html), so my command
+line is:
 
     <DITA_HOME> $ ant -Dargs.input=/path/to/leiningen-doc/ugbook.ditamap -Dtranstype=pdf
 
