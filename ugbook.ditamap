@@ -91,8 +91,9 @@
       <topicref chunk="to-content"
 		href="ug/structndyn.dita">
 	<topicref href="ug/projmap.dita">
-	   <topicref href="ug/projconfigmap.dita"/>
-	   <topicref href="ug/effectiveprojmap.dita"/>
+	   <topicref href="ug/projmap-config.dita"/>
+	   <topicref href="ug/projmap-profiles.dita"/>
+	   <topicref href="ug/projmap-effective.dita"/>
 	   <topicref href="ug/projmapsemantics.dita"/>
 	 </topicref>
 	 <topicref href="ug/commands.dita"/>
@@ -127,35 +128,52 @@
 	     href="ug/parms.dita">
       <!-- <topicref href="ug/config.dita"/> -->
     </chapter>
-    <chapter chunk="to-content"
-	     navtitle="Commands"
-	     href="ug/commands.dita">
+
+    <chapter chunk="to-content" href="ug/silp.dita">
+    </chapter>
+
+    <chapter chunk="to-content" href="ug/map-project.dita">
+      <topicref href="ug/profiles.dita">
+	<topicref href="ug/profiles-system.dita"/>
+	<topicref href="ug/profiles-user.dita"/>
+      </topicref>
+    </chapter>
+
+    <chapter chunk="to-content" href="ug/commands.dita">
       <topicref href="ug/commands-defaults.dita"/>
       <topicref href="ug/plugins.dita"/>
     </chapter>
     <chapter chunk="to-content"
 	     href="ug/deps.dita">
+      <topicref href="ug/deps-tree.dita"/>
+      <topicref href="ug/deps-ns.dita"/>
       <topicref href="ug/classpath.dita"/>
     </chapter>
-    <chapter chunk="to-content"
-	     href="ug/repos.dita">
+    <chapter chunk="to-content" href="ug/repos.dita">
     </chapter>
-    <chapter chunk="to-content"
-	     href="ug/profiles.dita">
+
+    <chapter chunk="to-content" href="ug/templates.dita">
     </chapter>
-    <chapter chunk="to-content"
-	     href="ug/templates.dita">
+    <chapter chunk="to-content" href="ug/repl.dita">
     </chapter>
-    <chapter chunk="to-content"
-	     href="ug/repl.dita">
+    <chapter chunk="to-content" href="ug/trampolines.dita">
     </chapter>
-    <chapter chunk="to-content"
-	     href="ug/trampolines.dita">
+
+    <chapter chunk="to-content" href="ug/testing.dita">
+      <topicref href="ug/testing-unit.dita">
+	<topicref href="ug/testing-unit-concepts.dita"/>
+	<topicref href="ug/testing-unit-proc.dita"/>
+      </topicref>
+      <topicref href="ug/testing-system.dita">
+	<topicref href="ug/testing-system-concepts.dita"/>
+	<topicref href="ug/testing-system-proc.dita"/>
+      </topicref>
+      <topicref href="ug/testing-ci.dita">
+	<topicref href="ug/testing-ci-concepts.dita"/>
+	<topicref href="ug/testing-ci-proc.dita"/>
+      </topicref>
     </chapter>
-    <chapter chunk="to-content"
-	     href="ug/testing.dita">
-      <!-- <topicref href="ug/config.dita"/> -->
-    </chapter>
+
     <chapter chunk="to-content"
 	     href="ug/deployment.dita">
       <!-- <topicref href="ug/config.dita"/> -->

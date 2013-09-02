@@ -5,8 +5,15 @@
   <title>Project Map Semantics</title>
   <shortdesc>Project map semantics are determined by command
   implementations.</shortdesc>
+
   <prolog><metadata>
-    <keywords><indexterm>Project map semantics</indexterm></keywords>
+    <keywords>
+      <indexterm>Map<indexterm>semantics</indexterm></indexterm>
+      <indexterm>Project<indexterm>map semantics</indexterm></indexterm>
+      <indexterm>Semantics
+      <indexterm>Project map</indexterm>
+      </indexterm>
+    </keywords>
   </metadata></prolog>
 
   <conbody>

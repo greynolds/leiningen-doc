@@ -2,10 +2,9 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
 "../dtd/concept.dtd">
 <concept id="projmap" xml:lang="en-us">
-  <title>Project Maps</title>
+  <title>The Project Map</title>
   <shortdesc>The central concept of Leiningen is the <term>project
   map</term>.</shortdesc>
-
   <prolog><metadata>
     <keywords><indexterm>Project<indexterm>map</indexterm></indexterm></keywords>
   </metadata></prolog>
@@ -18,5 +17,14 @@
       Clojure :-prefixed keys.  L defines a default set of keys;
       users are free to extend this set.
     </p>
+
+    <p>
+      How does the project map function?
+    </p>
+
+    <p>
+      The effective project map computed at runtime - how?
+    </p>
+
   </conbody>
 </concept>

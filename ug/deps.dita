@@ -10,8 +10,15 @@
       dependencies are jars.
     </p>
 
-    <p>Problem: how to identify dependenies?  Solution: use maven's
-    convention of <q>GROUP-ID/ARTIFACT-ID "VERSION"</q>.</p>
+    <p>Problem: how to identify dependenies?  Solution: use
+    Leiningen's convention of <q>GROUP-ID/ARTIFACT-ID "VERSION"</q> is
+    based on Maven.  See <xref scope="external"
+    href="http://maven.apache.org/glossary.html#Artifact">Maven
+    Glossary</xref>, <xref scope="external"
+    href="http://maven.apache.org/guides/mini/guide-naming-conventions.html">Maven
+    Guide to naming conventions on groupId, artifactId and
+    version</xref>.
+    </p>
 
     <p>
       Use of <userinput>lein deps</userinput> and <userinput>lein deps

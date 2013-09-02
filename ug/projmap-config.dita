@@ -7,9 +7,27 @@
   <apiname>defproject</apiname> macro in the
   <filepath>project.clj</filepath> file in the project <term>root
   directory</term>.</shortdesc>
-  <prolog><metadata>
-    <keywords><indexterm>Project configuration map</indexterm></keywords>
-  </metadata></prolog>
+
+  <prolog>
+    <metadata>
+      <keywords>
+	<indexterm>
+	  Map
+	  <indexterm>Project configuration</indexterm>
+	  <index-see-also>Project</index-see-also>
+	</indexterm>
+	<indexterm>
+	  Project configuration map
+	  <index-see>Map</index-see>
+	</indexterm>
+	<indexterm>
+	  Project <indexterm>configuration map</indexterm>
+	  <index-see-also>Effective project map</index-see-also>
+	  <index-see-also>Map</index-see-also>
+	</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <conbody>
 
