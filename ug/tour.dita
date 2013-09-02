@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
  "../dtd/task.dtd">
-<task id="newproj" xml:lang="en-us">
-<title>Project Structure and Dynamics</title>
+<task id="tour" xml:lang="en-us">
+<title>A Quick Tour</title>
 <shortdesc>We create a minimal project and explore its structure and
 configuration.</shortdesc>
 <prolog><metadata>

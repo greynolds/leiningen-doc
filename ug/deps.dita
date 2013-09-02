@@ -10,11 +10,38 @@
       dependencies are jars.
     </p>
 
+    <p>Problem: how to identify dependenies?  Solution: use maven's
+    convention of <q>GROUP-ID/ARTIFACT-ID "VERSION"</q>.</p>
+
+    <p>
+      Use of <userinput>lein deps</userinput> and <userinput>lein deps
+      :tree</userinput>.
+    </p>
+
+    <p>
+      Problem: how does Leiningen search?  Soln: describe :repos.
+      Something about using local repos.
+    </p>
+
+    <p>
+      Problem: what to do if Leiningen fails to find the dependency.
+      Interpreting error messages.
+    </p>
+
     <section>
-      <title></title>
+      <title>Dependency Versions</title>
       <p>
+	The problem: how do I automatically make sure I'm using the
+	latest versions of my dependencies?
+      </p>
+      <p>
+See <xref scope="external"
+href="http://stackoverflow.com/questions/5693621/keeping-dependency-versions-up-to-date-in-leiningen-projects">this
+stackoverlow question</xref> about using the latest verion of deps.
     </p>
     </section>
+
+    
 
   </body>
 

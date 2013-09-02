@@ -4,9 +4,10 @@
 <bookmap chunk="by-document">
   <!-- <title>Leiningen User&#x2019;s Guide</title> -->
   <booktitle>
-    <booklibrary>Leiningen Documentation</booklibrary>
-    <mainbooktitle>Leiningen User's Guide</mainbooktitle>
-    <booktitlealt>User's Guide to Leiningen</booktitlealt>
+    <!-- <booklibrary>Leiningen Documentation</booklibrary> -->
+    <mainbooktitle>Malleus Formicarum</mainbooktitle>
+    <booktitlealt><i>or,</i> The Ants Hammer</booktitlealt>
+    <booktitlealt>Leiningen Users Guide</booktitlealt>
   </booktitle>
 
   <bookmeta>
@@ -69,7 +70,12 @@
       <topicref chunk="to-content"
 		href="ug/trademarks.dita"></topicref>
     </notices>
-    <preface href="ug/ug-preface.dita"></preface>
+    <preface navtitle="About Leiningen">
+      <!-- <topicref chunk="to-content" -->
+      <!-- 		href="ug/ug-preface.dita"></topicref> -->
+      <topicref chunk="to-content"
+		href="ug/plan.dita"></topicref>
+    </preface>
   </frontmatter>
 
   <!-- ################################################################ -->
@@ -80,10 +86,23 @@
       <topicref href="ug/ccc-solution.dita"/>
     </chapter>
 
-    <chapter href="ug/gettingstarted.dita">
-      <topicref href="ug/install.dita"/>
-      <topicref href="ug/minproj.dita"/>
-      <topicref href="ug/leininfrastruct.dita"/>
+    <chapter navtitle="What is Leiningen?"
+		href="ug/whatislein.dita">
+      <topicref chunk="to-content"
+		href="ug/structndyn.dita">
+	<topicref href="ug/projmap.dita">
+	   <topicref href="ug/projconfigmap.dita"/>
+	   <topicref href="ug/effectiveprojmap.dita"/>
+	   <topicref href="ug/projmapsemantics.dita"/>
+	 </topicref>
+	 <topicref href="ug/commands.dita"/>
+	 <topicref href="ug/leininfrastruct.dita"/>
+      </topicref>
+      <topicref href="ug/gettingstarted.dita">
+	<topicref href="ug/install.dita"/>
+	<topicref href="ug/tour.dita"/>
+	<!-- <topicref href="ug/leininfrastruct.dita"/> -->
+      </topicref>
     </chapter>
 
 
@@ -109,12 +128,14 @@
       <!-- <topicref href="ug/config.dita"/> -->
     </chapter>
     <chapter chunk="to-content"
-	     href="ug/tasks.dita">
-      <topicref href="ug/tasks-defaults.dita"/>
+	     navtitle="Commands"
+	     href="ug/commands.dita">
+      <topicref href="ug/commands-defaults.dita"/>
       <topicref href="ug/plugins.dita"/>
     </chapter>
     <chapter chunk="to-content"
 	     href="ug/deps.dita">
+      <topicref href="ug/classpath.dita"/>
     </chapter>
     <chapter chunk="to-content"
 	     href="ug/repos.dita">
