@@ -11,6 +11,8 @@ Use either ditac or DITA-OT (links below).  To generate PDF output,
 you need an XSLFO processor.  I have a copy of XEP (typesetting Geek
 here), which works great, so I have not tested FOP.
 
+NOTE: apparently the full-easy-install package of DITA-OT comes with FOP.
+
 ## ditac
 
 The instructions at
@@ -43,6 +45,8 @@ haven't been able to figure out how to specify a different output dir.
 Change the transtype parm to change the format,
 e.g. -Dtranstype=xhtml. (See
 http://dita-ot.github.io/1.8/readme/AvailableTransforms.html)
+
+For PDF output see also http://dita-ot.github.io/1.8/readme/ant-parameters-pdf2-transformation.html
 
 # DITA Resources
 
