@@ -35,12 +35,14 @@ I use the ant technique
 (http://dita-ot.github.io/1.8/readme/DITA-antuse.html), so my command
 line is:
 
-    <DITA_HOME> $ ant -Dargs.input=/path/to/leiningen-doc/ugbook.ditamap -Dtranstype=pdf
+    DITA_HOME $ ant -Dargs.input=/path/to/leiningen-doc/ugbook.ditamap -Dtranstype=pdf
 
 Must be executed from the toolkit's root dir; haven't figured out how
-to get around that yet.  This puts the output in <DITA_HOME>/out.  I
+to get around that yet.  This puts the output to DITA_HOME/out.  I
 haven't been able to figure out how to specify a different output dir.
-Change the transtype parm to change the format, e.g. -Dtranstype=xhtml.
+Change the transtype parm to change the format,
+e.g. -Dtranstype=xhtml. (See
+http://dita-ot.github.io/1.8/readme/AvailableTransforms.html)
 
 # DITA Resources
 
@@ -48,11 +50,9 @@ Change the transtype parm to change the format, e.g. -Dtranstype=xhtml.
 
 [DITA XML.org](http://dita.xml.org/) - "the official community gathering place and information resource for the DITA OASIS Standard."
 
-[DITA Open Toolkit](http://dita-ot.github.io/)
+[DITA Open Toolkit](http://dita-ot.github.io/) (DITA OT)
 
-(cmd: ant -Dargs.input=$HOME/dev/leiningen-doc/userguide.ditamap -Dtranstype=pdf2)
-
-[XMLMind DITA Converter](http://www.xmlmind.com/ditac/)
+[XMLMind DITA Converter](http://www.xmlmind.com/ditac/) (ditac)
 
 Whitepapers: 
 
