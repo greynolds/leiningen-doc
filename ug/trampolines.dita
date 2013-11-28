@@ -4,6 +4,10 @@
 <topic id="backend">
   <title>Trampolines</title>
 
+  <abstract>
+    This is the abstract.  It should be italic.
+  </abstract>
+
   <body>
     <p>
       What is a trampoline?  What problem do trampolines solve?  How
@@ -12,8 +16,16 @@
     <section>
       <title></title>
       <p>
-    </p>
+	<note type="important">
+	  and this is an important note, demonstrating an xsl override!
+	</note>
+      </p>
     </section>
+
+    <example>
+      <title>Here's an example</title>
+      <codeblock>...containing a codeblock...</codeblock>
+    </example>
 
   </body>
 
